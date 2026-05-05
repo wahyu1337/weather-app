@@ -1,3 +1,5 @@
+import getInfo from "../components/handler.js";
+
 export default function Content() {
     // content parent
     const content = document.querySelector("#content");
@@ -10,3 +12,14 @@ export default function Content() {
     // append
     content.appendChild(contentTitle);
 }
+
+async function inputCity () {
+    const city = prompt("Input your city or country name", "makassar");
+    if (city) {
+        const weatherData = await getInfo(city);
+        // console data city.
+        console.log("Weather Data received:", weatherData);
+    }
+}
+
+export {inputCity}

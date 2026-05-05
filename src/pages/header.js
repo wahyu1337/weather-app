@@ -3,7 +3,7 @@ export default function Header() {
     const header = document.querySelector("#header");
     // header child
     const titleHeader = document.createElement("h1");
-    titleHeader.textContent = "HEADER TITLE";
+    titleHeader.textContent = "Ways - Weather App";
     titleHeader.classList.add("header-title");
 
     // append
