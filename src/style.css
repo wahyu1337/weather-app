@@ -12,7 +12,9 @@ button {
 }
 
 /* icon */
-
+.material-symbols-outlined {
+    color: white;
+}
 
 #container {
     display: grid;
@@ -33,9 +35,22 @@ button {
     background-color: rgb(135, 24, 209);
 }
 
-.right-header {
+#right-header {
     display: flex;
-    gap: 6px;
+    align-items: center;
+    gap: 7px;
+}
+
+#right-header button {
+    background-color: transparent;
+    border: none;
+    padding: 2px;
+    margin-top: 2px;
+    transition: 0.15s;
+}
+
+#right-header button:hover {
+    background-color: rgba(44, 11, 66, 0.295);
 }
 
 #content {
@@ -53,25 +68,40 @@ button {
     display: flex;
     align-items: center;
     background-color: #f6f6f6;
-    width: max-content;
-    padding: 10px;
-    border-radius: 20px;
+    width: 400px;
+    height: 15px;
+    padding: 14px;
+    border-radius: 28px;
+    transition: 0.15s;
 }
 
 #inputContent input, #inputContent button {
     border: none;
-    padding: 4px;    
+    padding: 6px;
     background-color: #f6f6f6;
 }
 
 #inputContent input {
     width: 300px;
+    font-size: 16px;
     color: #333333;
     outline: none;
     background: transparent;
     flex: 1;
+    margin-right: 14px;
 }
 
+#inputContent button {
+    height: min-content;
+}
+
+#inputContent:focus-within {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.75);
+}
+
+#inputContent.light:focus-within {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
 
 #footer {
     /* display set*/
