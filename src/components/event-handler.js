@@ -1,8 +1,11 @@
+import logs from "./logs.js";
+
 // current mode state 1 = dark, 0 = light
 let currentDarkMode = true;
 
 // event listener
-export default function darkMode() {
+// darkmode
+function darkMode() {
     const darkmode = document.querySelector("#darkmode");
     // event listener
     darkmode.addEventListener("click", () => {
@@ -18,3 +21,13 @@ export default function darkMode() {
         }
     }) 
 }
+
+function searchBtn() {
+    const btnSearch = document.getElementById("btnSearch");
+    btnSearch.addEventListener("click", () => {
+        const inputValue = document.getElementById("input").value;    
+        logs(inputValue);
+    });
+}
+
+export {darkMode, searchBtn};
