@@ -6,7 +6,7 @@ export default function Content() {
 
     // content child
     const contentTitle = document.createElement("h2");
-    contentTitle.textContent = "This is content title!";
+    contentTitle.textContent = "Content";
     contentTitle.classList.add("content-title");
 
     // append

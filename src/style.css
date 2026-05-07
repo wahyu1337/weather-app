@@ -25,6 +25,11 @@
     background-color: rgb(135, 24, 209);
 }
 
+.right-header {
+    display: flex;
+    gap: 6px;
+}
+
 #content {
     /* display */
     display: flex;
