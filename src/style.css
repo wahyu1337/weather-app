@@ -12,9 +12,7 @@ button {
 }
 
 /* icon */
-.material-symbols-outlined {
-    color: white;
-}
+
 
 #container {
     display: grid;
@@ -41,6 +39,10 @@ button {
     gap: 7px;
 }
 
+#right-header .material-symbols-outlined {
+    color: white;
+}
+
 #right-header button {
     background-color: transparent;
     border: none;
@@ -62,17 +64,22 @@ button {
     border: 2px solid green;
 
     /* custom style */    
+    gap: 14px;
 }
 
 #inputContent {
     display: flex;
     align-items: center;
-    background-color: #f6f6f6;
+    background-color: #f9f9f9;
     width: 400px;
     height: 15px;
     padding: 14px;
     border-radius: 28px;
     transition: 0.15s;
+}
+
+#inputContent .material-symbols-outlined {
+    color: rgb(135, 24, 209);
 }
 
 #inputContent input, #inputContent button {
@@ -101,6 +108,27 @@ button {
 
 #inputContent.light:focus-within {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+#detailContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid red;
+    padding: 14px;
+}
+
+#description {
+    display: flex;
+    gap: 8px;
+    border: 2px solid cyan;
+}
+
+#temp, #humidity, #pressure, #wind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #footer {

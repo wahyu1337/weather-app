@@ -1,3 +1,5 @@
+import logs from "./logs.js";
+
 export default async function getInfo(name) {
   const apiKey = '0f42a8e045f288a4fd0dd59c2b465abb';
   try {
@@ -9,6 +11,7 @@ export default async function getInfo(name) {
     }
 
     const json = await response.json();
+    logs(json);
     return json;
   } catch (error) {
     console.error(error.message);

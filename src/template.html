@@ -8,6 +8,7 @@
     </head>
     <body>
     <div id="container">
+      <!-- header -->
       <div id="header">
         <div id="left-header">
           <p>Ways - Weather Apps</p>
@@ -19,15 +20,38 @@
           </button>
         </div>
       </div>
+      <!-- content -->
       <div id="content">
+        <!-- Search box & Input text-->
         <div id="inputContent">
           <input type="text" name="input" id="input" placeholder="Search">
           <button id="btnSearch">
             <span class="material-symbols-outlined">search</span>
           </button>
         </div>
-        <div id="detailContent">
-          <p>Details</p>
+        <!-- City/Country title -->
+        <div id="location"><span id="cityName">test</span>(<span id="country">indonesia</span>)</div>
+        <!-- Detail weather -->
+        <div id="detailContent">          
+          <div id="icon">test</div>
+          <div id="description">
+            <div id="temp">
+              <div id="title">Temperature</div>
+              <div id="value">2</div>
+            </div>
+            <div id="humidity">
+              <div id="title">Humidity</div>
+              <div id="value">2</div>
+            </div>
+            <div id="pressure">
+              <div id="title">Pressure</div>
+              <div id="value">2</div>
+            </div>
+            <div id="wind">
+              <div id="title">Wind Speed</div>
+              <div id="value">2</div>
+            </div>   
+          </div>    
         </div>
       </div>
       <footer id="footer"></footer>

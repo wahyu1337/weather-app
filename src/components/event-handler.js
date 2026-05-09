@@ -1,4 +1,5 @@
 import logs from "./logs.js";
+import getInfo from "./response.js";
 
 // current mode state 1 = dark, 0 = light
 let currentDarkMode = true;
@@ -33,7 +34,9 @@ function searchBtn() {
     const btnSearch = document.getElementById("btnSearch");
     btnSearch.addEventListener("click", () => {
         const inputValue = document.getElementById("input").value;    
-        logs(inputValue);
+        logs(`Searching for ${inputValue}...`);
+
+        getInfo(inputValue);
     });
 }
 
