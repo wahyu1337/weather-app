@@ -29,27 +29,31 @@
             <span class="material-symbols-outlined">search</span>
           </button>
         </div>
-        <!-- City/Country title -->
-        <div id="location"><span id="cityName">test</span>(<span id="country">indonesia</span>)</div>
+        <!-- City/Country title -->     
         <!-- Detail weather -->
-        <div id="detailContent">          
-          <div id="icon">test</div>
+        <div id="location" style="display: none;">
+          <span id="cityName">test</span> <span id="countryName"></span>
+        </div>
+        <div id="detailContent" style="display: none;">          
+          <div id="icon-div">
+            <img id="icon" alt="Weather Icon" style="display: none;">
+          </div>                    
           <div id="description">
             <div id="temp">
-              <div id="title">Temperature</div>
-              <div id="value">2</div>
+              <div class="title">Temperature</div>
+              <span id="tempValue">2</span>
             </div>
             <div id="humidity">
-              <div id="title">Humidity</div>
-              <div id="value">2</div>
+              <div class="title">Humidity</div>
+              <div id="humidityValue">2</div>
             </div>
             <div id="pressure">
-              <div id="title">Pressure</div>
-              <div id="value">2</div>
+              <div class="title">Pressure</div>
+              <div id="pressureValue">2</div>
             </div>
             <div id="wind">
-              <div id="title">Wind Speed</div>
-              <div id="value">2</div>
+              <div class="title">Wind Speed</div>
+              <div id="windValue">2</div>
             </div>   
           </div>    
         </div>
