@@ -9,51 +9,50 @@ let currentDarkMode = true;
 // darkmode button
 function darkMode() {
     const darkmode = document.getElementById("darkmode");
-    const themeMode = document.getElementById("theme");
-    const btnSearch = document.getElementById("btnSearch");
-    // event listener
+    const themeIcon = document.getElementById("theme");
+    
     darkmode.addEventListener("click", () => {
-    const container = document.getElementById("container");
-    const inputBox = document.getElementById("inputContent");
-    const detailContent = document.getElementById("detailContent");
-    const inputContent = document.getElementById("inputContent");
+        const container = document.getElementById("container");
         if (currentDarkMode) {
-            container.style.backgroundColor = "white";
-            container.style.color = "black";
-            themeMode.textContent = "light";
-            inputContent.style.backgroundColor = "rgba(235, 235, 235, 0.904)";
-            btnSearch.style.backgroundColor = "rgba(235, 235, 235, 0.904)";
-            detailContent.classList.add("detail-content-light");            
-            inputBox.classList.add("light");
-            return currentDarkMode = false;
+            container.classList.add("light");
+            themeIcon.textContent = "light_mode";
+            currentDarkMode = false;
         } else {
-            container.style.backgroundColor = "black";
-            container.style.color = "white";
-            themeMode.textContent = "dark_mode";
-            inputContent.style.backgroundColor = "white";
-            btnSearch.style.backgroundColor = "white";
-            detailContent.classList.remove("detail-content-light");                    
-            inputBox.classList.remove("light");
-            return currentDarkMode = true;
+            container.classList.remove("light");
+            themeIcon.textContent = "dark_mode";
+            currentDarkMode = true;
         }
-    }) 
+    });
 }
 
 // search button
 function searchBtn() {
     const btnSearch = document.getElementById("btnSearch");
-    btnSearch.addEventListener("click", async () => {
-        const inputValue = document.getElementById("input").value;    
+    const input = document.getElementById("input");
+
+    const handleSearch = async () => {
+        const inputValue = input.value;
+        if (!inputValue) return;
+
         logs(`Searching for ${inputValue}...`);
         
-        // get the data information
         try {
             const json = await getInfo(inputValue);
-            displayWeatherData(json);
+            if (json) {
+                displayWeatherData(json);
+            }
         } catch (err) {
             console.error("Error fetching data: ", err);
         }
-    });    
+    };
+
+    btnSearch.addEventListener("click", handleSearch);
+
+    input.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            handleSearch();
+        }
+    });
 }
 
 export {darkMode, searchBtn};
