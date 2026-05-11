@@ -8,17 +8,21 @@ let currentDarkMode = true;
 // event listener
 // darkmode button
 function darkMode() {
-    const darkmode = document.querySelector("#darkmode");
+    const darkmode = document.getElementById("darkmode");
     const themeMode = document.getElementById("theme");
+    const btnSearch = document.getElementById("btnSearch");
     // event listener
     darkmode.addEventListener("click", () => {
     const container = document.getElementById("container");
     const inputBox = document.getElementById("inputContent");
     const detailContent = document.getElementById("detailContent");
+    const inputContent = document.getElementById("inputContent");
         if (currentDarkMode) {
             container.style.backgroundColor = "white";
             container.style.color = "black";
             themeMode.textContent = "light";
+            inputContent.style.backgroundColor = "rgba(235, 235, 235, 0.904)";
+            btnSearch.style.backgroundColor = "rgba(235, 235, 235, 0.904)";
             detailContent.classList.add("detail-content-light");            
             inputBox.classList.add("light");
             return currentDarkMode = false;
@@ -26,7 +30,9 @@ function darkMode() {
             container.style.backgroundColor = "black";
             container.style.color = "white";
             themeMode.textContent = "dark_mode";
-            detailContent.classList.remove("detail-content-light");            
+            inputContent.style.backgroundColor = "white";
+            btnSearch.style.backgroundColor = "white";
+            detailContent.classList.remove("detail-content-light");                    
             inputBox.classList.remove("light");
             return currentDarkMode = true;
         }

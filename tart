@@ -1,0 +1,79 @@
+[33mcommit 2e9e645f88fe81baff8849c7780add9d411d417e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Sun May 10 02:20:08 2026 +0800
+
+    UPDATE SEARCH BTN AND API FUNCTION TO MAKE IT WORK
+    
+    now the API and search button are sync
+    but only icon isn't sync yet
+
+[33mcommit 9db9ff85af57358cd59e068481302d5e67f766ff[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Sat May 9 22:26:23 2026 +0800
+
+    Update content layout & API function in search button
+
+[33mcommit 7c9a8f8f17fc7a987b1a36c03ed2ae10bb7ef386[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Thu May 7 23:41:01 2026 +0800
+
+    Update theme mode function and some hover styling
+
+[33mcommit fa58cd7f0b235797de6bae5be129680749d29d2b[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Thu May 7 22:57:10 2026 +0800
+
+    Update button icon & content
+    
+    update every button icon from
+    darkmode and search button
+    
+    the update also contain some logs message
+    the search button now console the input value
+
+[33mcommit 9bcc1072758d8c1361c066fe3fab80901bb7696a[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Thu May 7 21:07:30 2026 +0800
+
+    UPDATE THEME
+    
+    Update theme mode with dark and light
+    mode, the default is dark mode. but it's
+
+[33mcommit 980152a010b807d47bba49bc7d693385a58aa076[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Tue May 5 10:18:36 2026 +0800
+
+    update & adjust dark mode
+    
+    update content layour and adjust into dark mode background
+
+[33mcommit ba30877759382eb71fd17c96499a3fa8298862b4[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Tue May 5 09:52:21 2026 +0800
+
+    Update footer informations
+
+[33mcommit 411992933c2bc81f2b7bd7e78f7d2afc202310a7[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Tue May 5 09:22:48 2026 +0800
+
+    Update api functions
+
+[33mcommit fb452ecbd5ef2554cbad28d3a2facc8cfaefe913[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Wed Apr 29 21:44:22 2026 +0800
+
+    add template file for project
+
+[33mcommit d74bc0aca134f342967056a1d67b51842d847048[m
+Author: wahyu1337 <wahyuisnaeni2002@gmail.com>
+Date:   Wed Apr 29 21:22:35 2026 +0800
+
+    change package projects name
+
+[33mcommit 2eedcb13d0f48ff22a16a95a0ac75e978640882c[m
+Author: Wahyu Isnaeni <133001921+wahyu1337@users.noreply.github.com>
+Date:   Wed Apr 29 21:19:23 2026 +0800
+
+    Initial commit
